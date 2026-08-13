@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-root="./">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not here · Elena</title>
+<meta name="description" content="Page not found.">
+<link rel="canonical" href="https://mtohernandez.github.io/elena/">
+<link rel="alternate" type="application/atom+xml" href="/elena/feed.xml" title="Feed">
+<link rel="icon" href="/elena/assets/img/favicon.svg" type="image/svg+xml">
+<!-- Applied before the stylesheet loads, or the page flashes the wrong theme
+     first. localStorage throws in some privacy modes, hence the try. -->
+<script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
+<link rel="stylesheet" href="/elena/assets/css/site.css">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- No bar, no panel, no background. The links float over whatever is behind
+     them, because on the front page the thing behind them is the whole site.
+     Every control in this row is the same pill: same height, same border, same
+     radius, same type. They are one family, so they read as one row. -->
+<nav class="float-nav" aria-label="Main"><a class="brand" href="/elena/">Elena</a><ul class="lenses" data-lenses><li><a class="lens" data-lens="all" href="/elena/#all">All</a></li><li><a class="lens" data-lens="writing" href="/elena/#writing">Writing</a></li><li><a class="lens" data-lens="sources" href="/elena/#sources">Sources</a></li><li><a class="lens" data-lens="topics" href="/elena/#topics">Topics</a></li><li><a class="lens" data-lens="sessions" href="/elena/#sessions">Sessions</a></li><li><a href="about/">About</a></li></ul><div class="nav-controls"><label class="gfilter"><span class="visually-hidden">Filter the graph</span><input type="search" id="gfilter" autocomplete="off" placeholder="Filter"></label><button type="button" id="gpause" class="control" aria-pressed="false">Pause motion</button></div>
+<details class="prefs" id="prefs">
+  <summary><span class="prefs-aa" aria-hidden="true">Aa</span><span>Text and theme</span></summary>
+  <div class="prefs-panel">
+    <fieldset><legend>Theme</legend>
+      <label><input type="radio" name="theme" value="system" checked> Match system</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </fieldset>
+    <fieldset><legend>Text size</legend>
+      <label><input type="radio" name="scale" value="1" checked> Normal</label>
+      <label><input type="radio" name="scale" value="1.125"> Larger</label>
+      <label><input type="radio" name="scale" value="1.25"> Largest</label>
+    </fieldset>
+    <fieldset><legend>Line spacing</legend>
+      <label><input type="radio" name="leading" value="1.65" checked> Normal</label>
+      <label><input type="radio" name="leading" value="1.85"> Loose</label>
+      <label><input type="radio" name="leading" value="2.05"> Loosest</label>
+    </fieldset>
+    <fieldset><legend>Line width</legend>
+      <label><input type="radio" name="measure" value="68ch" checked> Normal</label>
+      <label><input type="radio" name="measure" value="58ch"> Narrow</label>
+      <label><input type="radio" name="measure" value="78ch"> Wide</label>
+    </fieldset>
+    <fieldset><legend>Typeface</legend>
+      <label><input type="radio" name="face" value="hyper" checked> Hyperlegible</label>
+      <label><input type="radio" name="face" value="system"> Your system sans</label>
+      <label><input type="radio" name="face" value="serif"> Your system serif</label>
+    </fieldset>
+    <button type="button" class="btn" id="prefs-reset">Reset to defaults</button>
+    <p class="prefs-note">Kept in this browser only. Nothing is sent anywhere.</p>
+  </div>
+</details>
+</nav>
+
+<main id="main">
+<article class="prose page">
+<h1>Not here</h1>
+<p>That page does not exist, or has moved.</p>
+<p><a href="/elena/">Go to the front page</a> or <a href="/elena/writing/">browse everything written</a>.</p>
+</article>
+
+</main>
+
+<p class="corner">© 2026 Mateo Hernandez · <a href="licenses/">licences</a> · <a href="feed.xml">feed</a></p>
+<script src="/elena/assets/js/prefs.js" defer></script>
+</body>
+</html>

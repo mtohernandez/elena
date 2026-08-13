@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mtohernandez.github.io/elena/sitemap.xml

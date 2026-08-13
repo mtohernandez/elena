@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Elena</title>
+<meta name="description" content="What this notebook is, who keeps it, and how to read it.">
+<link rel="canonical" href="https://mtohernandez.github.io/elena/about/">
+<link rel="alternate" type="application/atom+xml" href="../feed.xml" title="Feed">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- Applied before the stylesheet loads, or the page flashes the wrong theme
+     first. localStorage throws in some privacy modes, hence the try. -->
+<script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- No bar, no panel, no background. The links float over whatever is behind
+     them, because on the front page the thing behind them is the whole site.
+     Every control in this row is the same pill: same height, same border, same
+     radius, same type. They are one family, so they read as one row. -->
+<nav class="float-nav" aria-label="Main"><a class="brand" href="../">Elena</a><ul class="lenses"><li><a class="lens" data-lens="all" href="../#all">All</a></li><li><a class="lens" data-lens="writing" href="../#writing">Writing</a></li><li><a class="lens" data-lens="sources" href="../#sources">Sources</a></li><li><a class="lens" data-lens="topics" href="../#topics">Topics</a></li><li><a class="lens" data-lens="sessions" href="../#sessions">Sessions</a></li><li><a href="./">About</a></li></ul>
+<details class="prefs" id="prefs">
+  <summary><span class="prefs-aa" aria-hidden="true">Aa</span><span>Text and theme</span></summary>
+  <div class="prefs-panel">
+    <fieldset><legend>Theme</legend>
+      <label><input type="radio" name="theme" value="system" checked> Match system</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </fieldset>
+    <fieldset><legend>Text size</legend>
+      <label><input type="radio" name="scale" value="1" checked> Normal</label>
+      <label><input type="radio" name="scale" value="1.125"> Larger</label>
+      <label><input type="radio" name="scale" value="1.25"> Largest</label>
+    </fieldset>
+    <fieldset><legend>Line spacing</legend>
+      <label><input type="radio" name="leading" value="1.65" checked> Normal</label>
+      <label><input type="radio" name="leading" value="1.85"> Loose</label>
+      <label><input type="radio" name="leading" value="2.05"> Loosest</label>
+    </fieldset>
+    <fieldset><legend>Line width</legend>
+      <label><input type="radio" name="measure" value="68ch" checked> Normal</label>
+      <label><input type="radio" name="measure" value="58ch"> Narrow</label>
+      <label><input type="radio" name="measure" value="78ch"> Wide</label>
+    </fieldset>
+    <fieldset><legend>Typeface</legend>
+      <label><input type="radio" name="face" value="hyper" checked> Hyperlegible</label>
+      <label><input type="radio" name="face" value="system"> Your system sans</label>
+      <label><input type="radio" name="face" value="serif"> Your system serif</label>
+    </fieldset>
+    <button type="button" class="btn" id="prefs-reset">Reset to defaults</button>
+    <p class="prefs-note">Kept in this browser only. Nothing is sent anywhere.</p>
+  </div>
+</details>
+</nav>
+
+<main id="main">
+<article class="prose page">
+<h1>About</h1>
+<p>Elena is a research project about a system that learns while it is running,
+rather than one that is trained and then switched on. This site is the notebook
+kept alongside that work: what was tried, what held, and what did not.</p>
+<h2 id="how-to-read-it">How to read it<a class="anchor" href="#how-to-read-it" aria-label="Link to this section">#</a></h2>
+<p>Every entry carries a status. <strong>Open</strong> means the question is live. <strong>Supported</strong>
+means a prediction held and the observation that would have killed it was given
+a real chance to fire. <strong>Refuted</strong> means it fired. <strong>Inconclusive</strong> means the
+test could not decide, which is usually a fault in the test rather than in the
+world.</p>
+<p>Refuted entries are kept in full and are listed on the same footing as anything
+else. A notebook that only records successes is advertising.</p>
+<h2 id="the-graph">The graph<a class="anchor" href="#the-graph" aria-label="Link to this section">#</a></h2>
+<p>Entries reference each other, and they reference the papers and books they rest
+on. Those references are drawn as a map, so it is possible to follow how one
+result led to the next instead of reading everything in order. Articles are
+circles. Sources are diamonds. The same information is on that page as a table
+for anyone who would rather read it, or who is using a screen reader.</p>
+<h2 id="sources">Sources<a class="anchor" href="#sources" aria-label="Link to this section">#</a></h2>
+<p>Every paper and book cited here is listed by reference only: title, author, year
+and a link to the original at its own publisher. Nothing from them is reproduced
+on this site. If a source is interesting, it should be read where it lives.</p>
+<h2 id="accessibility">Accessibility<a class="anchor" href="#accessibility" aria-label="Link to this section">#</a></h2>
+<p>The site aims at WCAG 2.2 AA and is checked against it on every build. Colour
+contrast is recomputed from the specification's own formula and a value that
+fails stops the build. The typeface is Atkinson Hyperlegible, drawn by the
+Braille Institute for readers with low vision.</p>
+<p>Under <strong>Reading</strong> in the header there are controls for theme, text size, line
+spacing, line width and typeface, including your own system serif or sans if you
+prefer one. Those settings are kept in your browser and never leave it. Colour is
+deliberately not adjustable beyond light and dark, because that is what makes it
+impossible to configure the site into an unreadable state.</p>
+<p>If the graph moves and you would rather it did not, the pause control sits above
+it, and if your system asks for reduced motion nothing on the page animates at
+all.</p>
+<h2 id="what-this-site-does-not-do">What this site does not do<a class="anchor" href="#what-this-site-does-not-do" aria-label="Link to this section">#</a></h2>
+<p>No cookies. No analytics. No third-party requests of any kind: the fonts and the
+one library are served from here. No accounts, no comments, no social links.</p>
+<p>To follow the work, use the feed.</p>
+</article>
+
+</main>
+
+<p class="corner">© 2026 Mateo Hernandez · <a href="../licenses/">licences</a> · <a href="../feed.xml">feed</a></p>
+<script src="../assets/js/prefs.js" defer></script>
+</body>
+</html>

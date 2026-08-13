@@ -1,0 +1,15 @@
+Atkinson Hyperlegible, by the Braille Institute of America. Designed for
+legibility for readers with low vision: unambiguous letterforms, open counters,
+clearly differentiated letter pairs.
+
+licence  SIL Open Font License 1.1 (see OFL.txt, shipped verbatim)
+origin   https://github.com/googlefonts/atkinson-hyperlegible
+
+The font is not renamed and not subsetted. The OFL reserves the font name, and
+subsetting would gain a few kilobytes at the cost of a renaming obligation.
+
+file                                    bytes   sha256
+AtkinsonHyperlegible-Regular.woff2       23196 2df4ba17804bc7a36f123127966075d8427bff2df58d0d76820c1130bb1a4150
+AtkinsonHyperlegible-Bold.woff2          23776 da8fce41a04f8498fbf79076f92d304b12e70c76f71b143c5dcfb6536c93c075
+AtkinsonHyperlegible-Italic.woff2        24908 60bedf0954ffa7e7800eddd529b06c7558d09283667c74fef60170d8d241089e
+AtkinsonHyperlegible-BoldItalic.woff2    25160 f27e95143bc12e8f40f955cf86c74e6afef4441abb89d271282ea0f9e93c1fd5

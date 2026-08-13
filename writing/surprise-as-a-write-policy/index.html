@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-root="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surprise as a write policy · Elena</title>
+<meta name="description" content="Two independent lines of work arrive at surprise deciding what gets written to memory. The engineering version still reaches that decision by gradient, which is the part that does not survive.">
+<link rel="canonical" href="https://mtohernandez.github.io/elena/writing/surprise-as-a-write-policy/">
+<link rel="alternate" type="application/atom+xml" href="../../feed.xml" title="Feed">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- Applied before the stylesheet loads, or the page flashes the wrong theme
+     first. localStorage throws in some privacy modes, hence the try. -->
+<script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body class="article">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- No bar, no panel, no background. The links float over whatever is behind
+     them, because on the front page the thing behind them is the whole site.
+     Every control in this row is the same pill: same height, same border, same
+     radius, same type. They are one family, so they read as one row. -->
+<nav class="float-nav" aria-label="Main"><a class="brand" href="../../">Elena</a><ul class="lenses"><li><a class="lens" data-lens="all" href="../../#all">All</a></li><li><a class="lens" data-lens="writing" href="../../#writing">Writing</a></li><li><a class="lens" data-lens="sources" href="../../#sources">Sources</a></li><li><a class="lens" data-lens="topics" href="../../#topics">Topics</a></li><li><a class="lens" data-lens="sessions" href="../../#sessions">Sessions</a></li><li><a href="../../about/">About</a></li></ul>
+<details class="prefs" id="prefs">
+  <summary><span class="prefs-aa" aria-hidden="true">Aa</span><span>Text and theme</span></summary>
+  <div class="prefs-panel">
+    <fieldset><legend>Theme</legend>
+      <label><input type="radio" name="theme" value="system" checked> Match system</label>
+      <label><input type="radio" name="theme" value="light"> Light</label>
+      <label><input type="radio" name="theme" value="dark"> Dark</label>
+    </fieldset>
+    <fieldset><legend>Text size</legend>
+      <label><input type="radio" name="scale" value="1" checked> Normal</label>
+      <label><input type="radio" name="scale" value="1.125"> Larger</label>
+      <label><input type="radio" name="scale" value="1.25"> Largest</label>
+    </fieldset>
+    <fieldset><legend>Line spacing</legend>
+      <label><input type="radio" name="leading" value="1.65" checked> Normal</label>
+      <label><input type="radio" name="leading" value="1.85"> Loose</label>
+      <label><input type="radio" name="leading" value="2.05"> Loosest</label>
+    </fieldset>
+    <fieldset><legend>Line width</legend>
+      <label><input type="radio" name="measure" value="68ch" checked> Normal</label>
+      <label><input type="radio" name="measure" value="58ch"> Narrow</label>
+      <label><input type="radio" name="measure" value="78ch"> Wide</label>
+    </fieldset>
+    <fieldset><legend>Typeface</legend>
+      <label><input type="radio" name="face" value="hyper" checked> Hyperlegible</label>
+      <label><input type="radio" name="face" value="system"> Your system sans</label>
+      <label><input type="radio" name="face" value="serif"> Your system serif</label>
+    </fieldset>
+    <button type="button" class="btn" id="prefs-reset">Reset to defaults</button>
+    <p class="prefs-note">Kept in this browser only. Nothing is sent anywhere.</p>
+  </div>
+</details>
+</nav>
+
+<main id="main">
+<p class="backline"><a class="back" href="../../" data-back><span class="back-arrow" aria-hidden="true">←</span> Back to the graph</a></p>
+<article class="article">
+<header class="article-head">
+<h1>Surprise as a write policy</h1>
+<p class="lede">Two independent lines of work arrive at surprise deciding what gets written to memory. The engineering version still reaches that decision by gradient, which is the part that does not survive.</p>
+<p class="byline"><img class="avatar" src="../../assets/img/avatar.svg" alt="" width="48" height="48"> <span class="byname">Mateo Hernandez</span> <span class="bysep" aria-hidden="true">·</span> <time datetime="2026-08-13">13 August 2026</time></p>
+</header>
+<div class="layout">
+<aside class="rail" aria-labelledby="rail-h">
+<h2 id="rail-h" class="visually-hidden">About this article</h2>
+<dl class="meta"><dt>Published</dt><dd><time datetime="2026-08-13">13 August 2026</time></dd><dt>Status</dt><dd><span class="pill pill-refuted"><span class="pill-glyph" aria-hidden="true">◆</span>refuted</span></dd><dt>Session</dt><dd><a href="../../sessions/0013/">0013</a></dd><dt>Topics</dt><dd><a class="topic" href="../../topics/memory/">memory</a> <a class="topic" href="../../topics/learning/">learning</a> <a class="topic" href="../../topics/test/">test</a> </dd></dl>
+</aside>
+<div class="prose">
+<p><a class="srcref" href="../../sources/R004/"><abbr title="Archived source R004">R004</abbr></a> updates its memory during use rather than during training, and decides what
+to store by how surprising an input was. <a class="srcref" href="../../sources/S002/"><abbr title="Archived source S002">S002</abbr></a> reports the same principle from a
+completely different direction: a synaptic experiment in which a modulatory
+signal arriving after the fact determines whether a coincidence is kept.</p>
+<p>Two fields, no shared method, one conclusion. That convergence is the strongest
+signal in the corpus so far, and <a class="srcref" href="../../sources/S009/"><abbr title="Archived source S009">S009</abbr></a> extends it by meta-learning the shape of
+such a rule rather than assuming it.</p>
+<h2 id="why-this-entry-is-marked-refuted">Why this entry is marked refuted<a class="anchor" href="#why-this-entry-is-marked-refuted" aria-label="Link to this section">#</a></h2>
+<p>The separable idea, surprise as a write policy, survives. The mechanism does
+not. <a class="srcref" href="../../sources/R004/"><abbr title="Archived source R004">R004</abbr></a> reaches its update by gradient, which means it is still the
+train-then-deploy split with the phases interleaved rather than removed. It
+looks like continuous learning and is not.</p>
+<p>Recording this as refuted rather than quietly narrowing the claim is the point.
+The prediction was that the archived engineering result would supply a usable
+mechanism. It supplies a usable objective and an unusable mechanism, and the
+distinction only becomes visible if the failure is written down.</p>
+<section class="cited" aria-labelledby="cited-h">
+<h2 id="cited-h">Sources cited</h2>
+<ul class="sources">
+<li class="source-line"><a class="srcid" href="../../sources/R004/">R004</a> <span class="source-title">Titans: Learning to Memorize at Test Time</span> <span class="source-meta">Behrouz, Zhong, Mirrokni, 2024</span> <a class="origin" href="https://arxiv.org/abs/2501.00663" rel="noopener">arXiv:2501.00663</a></li>
+<li class="source-line"><a class="srcid" href="../../sources/S002/">S002</a> <span class="source-title">Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental Support of NeoHebbian Three-Factor Learning Rules</span> <span class="source-meta">Gerstner, Lehmann, Liakoni, Corneil, Brea, 2018</span> <a class="origin" href="https://arxiv.org/abs/1801.05219" rel="noopener">arXiv:1801.05219</a></li>
+<li class="source-line"><a class="srcid" href="../../sources/S009/">S009</a> <span class="source-title">Meta-learning three-factor plasticity rules for structured credit assignment with sparse feedback</span> <span class="source-meta">Maoutsa, 2025</span> <a class="origin" href="https://arxiv.org/abs/2512.09366" rel="noopener">arXiv:2512.09366</a></li>
+</ul>
+</section>
+<section class="relations" aria-labelledby="rel-h">
+<h2 id="rel-h">Connected writing</h2>
+<ul class="rels"><li><span class="rel-kind">Builds on</span> <a href="../learning-without-a-backward-pass/">Learning without a backward pass</a></li><li><span class="rel-kind">Refutes</span> <a href="../attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></li></ul>
+</section>
+</div>
+</div>
+</article>
+
+</main>
+
+<p class="corner"><span>© 2026 Mateo Hernandez · <a href="../../licenses/">licences</a> · <a href="../../feed.xml">feed</a></span></p>
+<script src="../../assets/js/prefs.js" defer></script>
+</body>
+</html>

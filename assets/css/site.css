@@ -390,6 +390,8 @@ body.empty .float-nav>.prefs{margin-left:auto}
 }
 .prose{max-width:var(--measure);min-width:0}
 .prose h2{border-bottom:var(--rule) solid var(--line);padding-bottom:.15em}
+.page h2,.page h3{border:0;padding-bottom:0}
+.page h2{margin-top:1.9em}
 .prose blockquote{
   margin-left:0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--accent);
   color:var(--muted)
@@ -542,7 +544,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.5em}
 
 .state dt{font-weight:700;color:var(--accent);margin-top:1em;font-variant-numeric:tabular-nums}
 .state dd{margin:.2em 0 0;max-width:var(--measure)}
-.page{max-width:var(--measure)}
+.page{max-width:var(--measure);margin-inline:auto}
 
 /* ------------------------------------------------------------------ motion */
 

@@ -209,7 +209,8 @@ a:hover{text-decoration:underline}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
 
 .corner{
-  position:fixed;right:1.3rem;bottom:1.1rem;z-index:12;margin:0;
+  position:fixed;right:1.3rem;bottom:1rem;z-index:12;margin:0;
+  display:flex;align-items:center;justify-content:flex-end;min-height:2.5rem;
   color:var(--muted);font-size:.8rem;text-align:right;max-width:min(24rem,60vw)
 }
 .corner a{color:var(--muted)}
@@ -226,8 +227,8 @@ body.stage-page main{max-width:none;padding:0;height:100svh;position:relative}
 .empty-note{max-width:34ch;text-align:center;color:var(--muted)}
 .empty-title{color:var(--ink);font-weight:700;font-size:1.1rem;margin-bottom:.5em}
 .stage-hint{
-  position:absolute;left:1.3rem;bottom:1.1rem;margin:0;
-  color:var(--muted);font-size:.8rem;transition:opacity .4s
+  position:absolute;left:50%;transform:translateX(-50%);bottom:1.6rem;margin:0;
+  color:var(--muted);font-size:.8rem;transition:opacity .4s;pointer-events:none
 }
 .stage-hint.gone{opacity:0}
 .chips{
@@ -250,7 +251,9 @@ body.stage-page main{max-width:none;padding:0;height:100svh;position:relative}
    the container takes over the border and the summary squares off its bottom
    corners to meet it. Giving both a border at once is what left fragments of
    line hanging in the air. */
-.listpanel{position:absolute;left:1.3rem;bottom:3.4rem;z-index:11;max-width:min(60rem,92vw)}
+/* Bottom left mirrors top right: the same 1.3rem inset, the same 1rem from the
+   edge, the same 40px control. The four corners then describe one frame. */
+.listpanel{position:absolute;left:1.3rem;bottom:1rem;z-index:11;max-width:min(60rem,92vw)}
 .listpanel[open]{
   background:var(--bg);border:var(--rule) solid var(--line);
   border-radius:var(--radius);box-shadow:0 10px 34px rgba(0,0,0,.18)
@@ -266,11 +269,11 @@ body.stage-page main{max-width:none;padding:0;height:100svh;position:relative}
 }
 .listpanel>summary::-webkit-details-marker{display:none}
 .listpanel>summary::after{
-  content:"";width:.45em;height:.45em;flex:none;
+  content:"";width:.42em;height:.42em;flex:none;
   border-right:2px solid currentColor;border-bottom:2px solid currentColor;
-  transform:rotate(-45deg) translate(-.08em,.08em)
+  transform:rotate(45deg);margin-top:-.22em;margin-left:.6em
 }
-.listpanel[open]>summary::after{transform:rotate(45deg) translate(-.04em,-.04em)}
+.listpanel[open]>summary::after{transform:rotate(-135deg);margin-top:.22em}
 .listpanel-body{
   padding:1em;max-height:52svh;overflow:auto;overscroll-behavior:contain;
   border-radius:0 0 var(--radius) var(--radius)

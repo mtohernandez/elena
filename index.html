@@ -13,7 +13,7 @@
 <script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
 <link rel="stylesheet" href="./assets/css/site.css">
 </head>
-<body class="stage-page">
+<body class="stage-page empty">
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- No bar, no panel, no background. The links float over whatever is behind
@@ -57,38 +57,21 @@
 
 <main id="main">
 <h1 class="visually-hidden">Elena — Elena learns for as long as she is awake. These are the notes.</h1>
-<div class="chips" id="chips-topics" hidden><span class="chips-label">Topic</span><button type="button" class="chip" data-topic="attention">attention</button><button type="button" class="chip" data-topic="geometry">geometry</button><button type="button" class="chip" data-topic="learning">learning</button><button type="button" class="chip" data-topic="local-rules">local-rules</button><button type="button" class="chip" data-topic="memory">memory</button><button type="button" class="chip" data-topic="models">models</button><button type="button" class="chip" data-topic="neuroscience">neuroscience</button><button type="button" class="chip" data-topic="test">test</button></div>
-<div class="chips" id="chips-sessions" hidden><span class="chips-label">Session</span><button type="button" class="chip" data-session="0013">0013</button></div>
+<div class="chips" id="chips-topics" hidden><span class="chips-label">Topic</span></div>
+<div class="chips" id="chips-sessions" hidden><span class="chips-label">Session</span></div>
+<div class="stage stage-empty"><div class="empty-note"><p class="empty-title">Nothing on the map yet.</p><p>The first piece of writing will appear here as a point, and every paper it rests on as a second kind of point beside it. What you will be looking at is how one thing led to the next.</p></div></div>
 <div class="stage"><svg id="graph" role="application" tabindex="0" aria-label="Map of the writing and the sources it rests on" aria-describedby="graph-help" viewBox="-500 -380 1000 760" preserveAspectRatio="xMidYMid meet"></svg><p class="stage-hint" id="stage-hint">Drag a node. Click one to read it.</p></div>
 <p id="graph-status" class="visually-hidden" role="status" aria-live="polite"></p>
 <details class="listpanel" id="listpanel">
 <summary>Open as a list</summary>
 <div class="listpanel-body">
-<p class="intro">7 articles and 11 sources. Everything the map shows, in words.</p>
+<p class="intro">0 articles and 0 sources. Everything the map shows, in words.</p>
 <details class="keyhelp" id="graph-help"><summary>Keyboard controls</summary><dl><dt>Arrow keys</dt><dd>move to the nearest node that way</dd><dt>n and p</dt><dd>walk the neighbours of the focused node</dd><dt>Home and End</dt><dd>first and last node</dd><dt>Enter</dt><dd>open the focused node</dd><dt>Space</dt><dd>pause or resume the motion</dd><dt>Escape</dt><dd>leave the graph</dd></dl></details>
 <div class="scroll-x" tabindex="0" role="region" aria-label="The graph as a table">
 <table class="graph-table">
 <caption>Every node, and what it connects to.</caption>
 <thead><tr><th scope="col">Node</th><th scope="col">Kind</th><th scope="col">When</th><th scope="col">Status</th><th scope="col">Connections</th></tr></thead>
 <tbody>
-<tr><th scope="row"><a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></th><td>Article</td><td>9 August 2026</td><td>supported</td><td><span class="conn">refutes by <a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></span> · <span class="conn">builds on by <a href="writing/geometry-of-superposition/">The geometry that lets many things share one vector</a></span> · <span class="conn">relates to <a href="writing/geometry-of-superposition/">The geometry that lets many things share one vector</a></span> · <span class="conn">cites <a href="sources/R001/">Attention Is All You Need</a></span> · <span class="conn">cites <a href="sources/R002/">Hopfield Networks is All You Need</a></span> · <span class="conn">cites <a href="sources/R014/">Test-time regression: a unifying framework for designing sequence models…</a></span></td></tr>
-<tr><th scope="row"><a href="writing/geometry-of-superposition/">The geometry that lets many things share one vector</a></th><td>Article</td><td>10 August 2026</td><td>supported</td><td><span class="conn">builds on by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span> · <span class="conn">builds on <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span> · <span class="conn">relates to by <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span> · <span class="conn">cites <a href="sources/M003/">Foundations of Data Science</a></span></td></tr>
-<tr><th scope="row"><a href="writing/a-1952-model-that-still-holds/">A 1952 model that still holds</a></th><td>Article</td><td>11 August 2026</td><td>open</td><td><span class="conn">relates to by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span> · <span class="conn">relates to <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span> · <span class="conn">cites <a href="sources/S001/">A quantitative description of membrane current and its application…</a></span></td></tr>
-<tr><th scope="row"><a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></th><td>Article</td><td>12 August 2026</td><td>open</td><td><span class="conn">builds on by <a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></span> · <span class="conn">builds on <a href="writing/geometry-of-superposition/">The geometry that lets many things share one vector</a></span> · <span class="conn">relates to <a href="writing/a-1952-model-that-still-holds/">A 1952 model that still holds</a></span> · <span class="conn">relates to by <a href="writing/a-1952-model-that-still-holds/">A 1952 model that still holds</a></span> · <span class="conn">cites <a href="sources/R005/">The Forward-Forward Algorithm: Some Preliminary Investigations</a></span> · <span class="conn">cites <a href="sources/R006/">Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and…</a></span> · <span class="conn">cites <a href="sources/R009/">Predictive Coding Approximates Backprop Along Arbitrary Computation Graphs</a></span> · <span class="conn">cites <a href="sources/S002/">Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental…</a></span></td></tr>
-<tr><th scope="row"><a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></th><td>Article</td><td>13 August 2026</td><td>refuted</td><td><span class="conn">builds on <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span> · <span class="conn">refutes <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span> · <span class="conn">cites <a href="sources/R004/">Titans: Learning to Memorize at Test Time</a></span> · <span class="conn">cites <a href="sources/S002/">Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental…</a></span> · <span class="conn">cites <a href="sources/S009/">Meta-learning three-factor plasticity rules for structured credit assignment with…</a></span></td></tr>
-<tr><th scope="row"><a href="writing/test-node-one/">Test node one</a></th><td>Article</td><td>13 August 2026</td><td>open</td><td><span class="conn">builds on by <a href="writing/test-node-two/">Test node two</a></span></td></tr>
-<tr><th scope="row"><a href="writing/test-node-two/">Test node two</a></th><td>Article</td><td>13 August 2026</td><td>supported</td><td><span class="conn">builds on <a href="writing/test-node-one/">Test node one</a></span></td></tr>
-<tr><th scope="row"><a href="sources/M003/">Foundations of Data Science</a></th><td>Source</td><td>2020</td><td>math</td><td><span class="conn">cites by <a href="writing/geometry-of-superposition/">The geometry that lets many things share one vector</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R001/">Attention Is All You Need</a></th><td>Source</td><td>2017</td><td>reference</td><td><span class="conn">cites by <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R002/">Hopfield Networks is All You Need</a></th><td>Source</td><td>2020</td><td>reference</td><td><span class="conn">cites by <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R004/">Titans: Learning to Memorize at Test Time</a></th><td>Source</td><td>2024</td><td>reference</td><td><span class="conn">cites by <a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R005/">The Forward-Forward Algorithm: Some Preliminary Investigations</a></th><td>Source</td><td>2022</td><td>reference</td><td><span class="conn">cites by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R006/">Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and Backpropagation</a></th><td>Source</td><td>2017</td><td>reference</td><td><span class="conn">cites by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R009/">Predictive Coding Approximates Backprop Along Arbitrary Computation Graphs</a></th><td>Source</td><td>2020</td><td>reference</td><td><span class="conn">cites by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span></td></tr>
-<tr><th scope="row"><a href="sources/R014/">Test-time regression: a unifying framework for designing sequence models with associative memory</a></th><td>Source</td><td>2025</td><td>reference</td><td><span class="conn">cites by <a href="writing/attention-is-retrieval/">Attention is a retrieval problem wearing a different name</a></span></td></tr>
-<tr><th scope="row"><a href="sources/S001/">A quantitative description of membrane current and its application to conduction and…</a></th><td>Source</td><td>1952</td><td>science</td><td><span class="conn">cites by <a href="writing/a-1952-model-that-still-holds/">A 1952 model that still holds</a></span></td></tr>
-<tr><th scope="row"><a href="sources/S002/">Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental Support of NeoHebbian…</a></th><td>Source</td><td>2018</td><td>science</td><td><span class="conn">cites by <a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></span> · <span class="conn">cites by <a href="writing/learning-without-a-backward-pass/">Learning without a backward pass</a></span></td></tr>
-<tr><th scope="row"><a href="sources/S009/">Meta-learning three-factor plasticity rules for structured credit assignment with sparse feedback</a></th><td>Source</td><td>2025</td><td>science</td><td><span class="conn">cites by <a href="writing/surprise-as-a-write-policy/">Surprise as a write policy</a></span></td></tr>
 </tbody>
 </table>
 </div>
@@ -98,46 +81,10 @@
 <script type="application/json" id="graphdata">{
 "version":1,"generated":"2026-08-12",
 "nodes":[
-{"id":"a:attention-is-retrieval","kind":"article","label":"Attention is a retrieval problem wearing a different name","url":"writing/attention-is-retrieval/","when":"2026-08-09","status":"supported","sub":"If the attention used in transformers is exactly the update rule of a modern associative memory, then its cost is a property of one implementation rather…","topics":["memory","attention","test"],"degree":6,"x":0.00,"y":0.00},
-{"id":"a:geometry-of-superposition","kind":"article","label":"The geometry that lets many things share one vector","url":"writing/geometry-of-superposition/","when":"2026-08-10","status":"supported","sub":"Random directions in high dimensions are very nearly at right angles, which is the whole reason a single vector can hold many items and give any…","topics":["memory","geometry","test"],"degree":4,"x":-25.07,"y":22.97},
-{"id":"a:a-1952-model-that-still-holds","kind":"article","label":"A 1952 model that still holds","url":"writing/a-1952-model-that-still-holds/","when":"2026-08-11","status":"open","sub":"The Hodgkin and Huxley description of the nerve impulse is old enough to predate the transistor and still predicts a measured conduction velocity to three digits.","topics":["neuroscience","models","test"],"degree":3,"x":4.20,"y":-47.90},
-{"id":"a:learning-without-a-backward-pass","kind":"article","label":"Learning without a backward pass","url":"writing/learning-without-a-backward-pass/","when":"2026-08-12","status":"open","sub":"Several published schemes drop the global backward pass. None of them yet does the whole job, and the honest position is to say which part each…","topics":["learning","local-rules","test"],"degree":8,"x":35.83,"y":46.73},
-{"id":"a:surprise-as-a-write-policy","kind":"article","label":"Surprise as a write policy","url":"writing/surprise-as-a-write-policy/","when":"2026-08-13","status":"refuted","sub":"Two independent lines of work arrive at surprise deciding what gets written to memory. The engineering version still reaches that decision by gradient, which is the…","topics":["memory","learning","test"],"degree":5,"x":-66.96,"y":-11.84},
-{"id":"a:test-node-one","kind":"article","label":"Test node one","url":"writing/test-node-one/","when":"2026-08-13","status":"open","sub":"A temporary node used to check the deployed site. It will be removed.","topics":["test"],"degree":1,"x":64.15,"y":-40.81},
-{"id":"a:test-node-two","kind":"article","label":"Test node two","url":"writing/test-node-two/","when":"2026-08-13","status":"supported","sub":"The second temporary node, linked to the first so the edge between them can be seen.","topics":["test"],"degree":1,"x":-21.62,"y":80.43},
-{"id":"s:M003","kind":"source","label":"Foundations of Data Science","url":"sources/M003/","when":"2020","status":"math","sub":"Blum, Hopcroft, Kannan","topics":[],"degree":1,"x":310.00,"y":0.00},
-{"id":"s:R001","kind":"source","label":"Attention Is All You Need","url":"sources/R001/","when":"2017","status":"reference","sub":"Vaswani et al.","topics":[],"degree":1,"x":260.79,"y":167.60},
-{"id":"s:R002","kind":"source","label":"Hopfield Networks is All You Need","url":"sources/R002/","when":"2020","status":"reference","sub":"Ramsauer et al.","topics":[],"degree":1,"x":128.78,"y":281.99},
-{"id":"s:R004","kind":"source","label":"Titans: Learning to Memorize at Test Time","url":"sources/R004/","when":"2024","status":"reference","sub":"Behrouz, Zhong, Mirrokni","topics":[],"degree":1,"x":-44.12,"y":306.84},
-{"id":"s:R005","kind":"source","label":"The Forward-Forward Algorithm: Some Preliminary Investigations","url":"sources/R005/","when":"2022","status":"reference","sub":"Hinton","topics":[],"degree":1,"x":-203.01,"y":234.28},
-{"id":"s:R006","kind":"source","label":"Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and Backpropagation","url":"sources/R006/","when":"2017","status":"reference","sub":"Scellier, Bengio","topics":[],"degree":1,"x":-297.44,"y":87.34},
-{"id":"s:R009","kind":"source","label":"Predictive Coding Approximates Backprop Along Arbitrary Computation Graphs","url":"sources/R009/","when":"2020","status":"reference","sub":"Millidge, Tschantz, Buckley","topics":[],"degree":1,"x":-297.44,"y":-87.34},
-{"id":"s:R014","kind":"source","label":"Test-time regression: a unifying framework for designing sequence models with associative memory","url":"sources/R014/","when":"2025","status":"reference","sub":"Wang, Shi, Fox","topics":[],"degree":1,"x":-203.01,"y":-234.28},
-{"id":"s:S001","kind":"source","label":"A quantitative description of membrane current and its application to conduction and excitation in nerve","url":"sources/S001/","when":"1952","status":"science","sub":"Hodgkin, Huxley","topics":[],"degree":1,"x":-44.12,"y":-306.84},
-{"id":"s:S002","kind":"source","label":"Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental Support of NeoHebbian Three-Factor Learning Rules","url":"sources/S002/","when":"2018","status":"science","sub":"Gerstner, Lehmann, Liakoni, Corneil, Brea","topics":[],"degree":2,"x":128.78,"y":-281.99},
-{"id":"s:S009","kind":"source","label":"Meta-learning three-factor plasticity rules for structured credit assignment with sparse feedback","url":"sources/S009/","when":"2025","status":"science","sub":"Maoutsa","topics":[],"degree":1,"x":260.79,"y":-167.60}
+
 ],
 "links":[
-{"source":"a:surprise-as-a-write-policy","target":"a:learning-without-a-backward-pass","kind":"builds_on"},
-{"source":"a:surprise-as-a-write-policy","target":"a:attention-is-retrieval","kind":"refutes"},
-{"source":"a:test-node-two","target":"a:test-node-one","kind":"builds_on"},
-{"source":"a:learning-without-a-backward-pass","target":"a:geometry-of-superposition","kind":"builds_on"},
-{"source":"a:learning-without-a-backward-pass","target":"a:a-1952-model-that-still-holds","kind":"relates_to"},
-{"source":"a:a-1952-model-that-still-holds","target":"a:learning-without-a-backward-pass","kind":"relates_to"},
-{"source":"a:geometry-of-superposition","target":"a:attention-is-retrieval","kind":"builds_on"},
-{"source":"a:attention-is-retrieval","target":"a:geometry-of-superposition","kind":"relates_to"},
-{"source":"a:surprise-as-a-write-policy","target":"s:R004","kind":"cites"},
-{"source":"a:surprise-as-a-write-policy","target":"s:S002","kind":"cites"},
-{"source":"a:surprise-as-a-write-policy","target":"s:S009","kind":"cites"},
-{"source":"a:learning-without-a-backward-pass","target":"s:R005","kind":"cites"},
-{"source":"a:learning-without-a-backward-pass","target":"s:R006","kind":"cites"},
-{"source":"a:learning-without-a-backward-pass","target":"s:R009","kind":"cites"},
-{"source":"a:learning-without-a-backward-pass","target":"s:S002","kind":"cites"},
-{"source":"a:a-1952-model-that-still-holds","target":"s:S001","kind":"cites"},
-{"source":"a:geometry-of-superposition","target":"s:M003","kind":"cites"},
-{"source":"a:attention-is-retrieval","target":"s:R001","kind":"cites"},
-{"source":"a:attention-is-retrieval","target":"s:R002","kind":"cites"},
-{"source":"a:attention-is-retrieval","target":"s:R014","kind":"cites"}
+
 ]
 }
 </script>

@@ -26,6 +26,7 @@ feed.xml
 index.html
 licenses/index.html
 robots.txt
+sessions/0013/index.html
 sessions/index.html
 sitemap.xml
 sources/index.html
@@ -36,4 +37,7 @@ status/open/index.html
 status/refuted/index.html
 status/supported/index.html
 topics/index.html
+topics/test/index.html
 writing/index.html
+writing/test-node-one/index.html
+writing/test-node-two/index.html

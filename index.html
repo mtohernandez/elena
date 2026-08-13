@@ -13,7 +13,7 @@
 <script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
 <link rel="stylesheet" href="./assets/css/site.css">
 </head>
-<body class="stage-page empty">
+<body class="stage-page">
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- No bar, no panel, no background. The links float over whatever is behind
@@ -57,21 +57,22 @@
 
 <main id="main">
 <h1 class="visually-hidden">Elena — Elena learns for as long as she is awake. These are the notes.</h1>
-<div class="chips" id="chips-topics" hidden><span class="chips-label">Topic</span></div>
-<div class="chips" id="chips-sessions" hidden><span class="chips-label">Session</span></div>
-<div class="stage stage-empty"><div class="empty-note"><p class="empty-title">Nothing on the map yet.</p><p>The first piece of writing will appear here as a point, and every paper it rests on as a second kind of point beside it. What you will be looking at is how one thing led to the next.</p></div></div>
+<div class="chips" id="chips-topics" hidden><span class="chips-label">Topic</span><button type="button" class="chip" data-topic="test">test</button></div>
+<div class="chips" id="chips-sessions" hidden><span class="chips-label">Session</span><button type="button" class="chip" data-session="0013">0013</button></div>
 <div class="stage"><svg id="graph" role="application" tabindex="0" aria-label="Map of the writing and the sources it rests on" aria-describedby="graph-help" viewBox="-500 -380 1000 760" preserveAspectRatio="xMidYMid meet"></svg><p class="stage-hint" id="stage-hint">Drag a node. Click one to read it.</p></div>
 <p id="graph-status" class="visually-hidden" role="status" aria-live="polite"></p>
 <details class="listpanel" id="listpanel">
 <summary>Open as a list</summary>
 <div class="listpanel-body">
-<p class="intro">0 articles and 0 sources. Everything the map shows, in words.</p>
+<p class="intro">2 articles and 0 sources. Everything the map shows, in words.</p>
 <details class="keyhelp" id="graph-help"><summary>Keyboard controls</summary><dl><dt>Arrow keys</dt><dd>move to the nearest node that way</dd><dt>n and p</dt><dd>walk the neighbours of the focused node</dd><dt>Home and End</dt><dd>first and last node</dd><dt>Enter</dt><dd>open the focused node</dd><dt>Space</dt><dd>pause or resume the motion</dd><dt>Escape</dt><dd>leave the graph</dd></dl></details>
 <div class="scroll-x" tabindex="0" role="region" aria-label="The graph as a table">
 <table class="graph-table">
 <caption>Every node, and what it connects to.</caption>
 <thead><tr><th scope="col">Node</th><th scope="col">Kind</th><th scope="col">When</th><th scope="col">Status</th><th scope="col">Connections</th></tr></thead>
 <tbody>
+<tr><th scope="row"><a href="writing/test-node-one/">Test node one</a></th><td>Article</td><td>13 August 2026</td><td>open</td><td><span class="conn">builds on by <a href="writing/test-node-two/">Test node two</a></span></td></tr>
+<tr><th scope="row"><a href="writing/test-node-two/">Test node two</a></th><td>Article</td><td>13 August 2026</td><td>supported</td><td><span class="conn">builds on <a href="writing/test-node-one/">Test node one</a></span></td></tr>
 </tbody>
 </table>
 </div>
@@ -81,10 +82,11 @@
 <script type="application/json" id="graphdata">{
 "version":1,"generated":"2026-08-12",
 "nodes":[
-
+{"id":"a:test-node-one","kind":"article","label":"Test node one","url":"writing/test-node-one/","when":"2026-08-13","status":"open","sub":"A temporary node used to check the deployed site. It will be removed.","topics":["test"],"degree":1,"x":0.00,"y":0.00},
+{"id":"a:test-node-two","kind":"article","label":"Test node two","url":"writing/test-node-two/","when":"2026-08-13","status":"supported","sub":"The second temporary node, linked to the first so the edge between them can be seen.","topics":["test"],"degree":1,"x":-25.07,"y":22.97}
 ],
 "links":[
-
+{"source":"a:test-node-two","target":"a:test-node-one","kind":"builds_on"}
 ]
 }
 </script>

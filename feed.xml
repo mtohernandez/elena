@@ -7,4 +7,20 @@
 <id>https://mtohernandez.github.io/elena/</id>
 <updated>2026-08-12T00:00:00Z</updated>
 <author><name>Mateo Hernandez</name></author>
+<entry>
+<title>Test node one</title>
+<link href="https://mtohernandez.github.io/elena/writing/test-node-one/"/>
+<id>https://mtohernandez.github.io/elena/writing/test-node-one/</id>
+<updated>2026-08-13T00:00:00Z</updated>
+<summary>A temporary node used to check the deployed site. It will be removed.</summary>
+<category term="test"/>
+</entry>
+<entry>
+<title>Test node two</title>
+<link href="https://mtohernandez.github.io/elena/writing/test-node-two/"/>
+<id>https://mtohernandez.github.io/elena/writing/test-node-two/</id>
+<updated>2026-08-13T00:00:00Z</updated>
+<summary>The second temporary node, linked to the first so the edge between them can be seen.</summary>
+<category term="test"/>
+</entry>
 </feed>

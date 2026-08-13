@@ -93,11 +93,15 @@ body{
   overflow-wrap:break-word;
 }
 
-h1,h2,h3,h4{line-height:1.25;margin:1.6em 0 .5em;font-weight:700}
-h1{font-size:1.9em;margin-top:0}
+h1,h2,h3,h4{line-height:1.25;margin:1.9em 0 .65em;font-weight:700}
+h1{font-size:1.9em;margin:0 0 .7em}
 h2{font-size:1.4em}
 h3{font-size:1.15em}
-p,ul,ol,dl,pre,table,figure,blockquote{margin:0 0 1.05em}
+/* Wider than the leading, or a paragraph break is invisible and the page reads
+   as one wall. At 1.65 leading this puts a clear beat between paragraphs while
+   a heading still sits closer to the text it introduces than to the text
+   above it. */
+p,ul,ol,dl,pre,table,figure,blockquote{margin:0 0 1.35em}
 p+p{margin-top:0}
 li{margin-bottom:.35em}
 
@@ -217,6 +221,18 @@ a:hover{text-decoration:underline}
 .corner a:hover{color:var(--accent)}
 
 main{max-width:78rem;margin:0 auto;padding:5.5rem 1.3rem 4.5rem}
+
+/* Fixed furniture only makes sense over something that does not scroll. On the
+   graph the canvas stays put and the links float above it. On a page of prose
+   the text would slide underneath them and collide, since there is no bar and
+   nothing to hide behind, so here they simply sit at the top and scroll away
+   with everything else. */
+body:not(.stage-page) .float-nav{position:static;padding:1.1rem 1.3rem 0}
+body:not(.stage-page) main{padding-top:2rem}
+body:not(.stage-page) .corner{
+  position:static;max-width:78rem;margin:0 auto;
+  padding:2.5rem 1.3rem 2.5rem;justify-content:flex-end
+}
 
 /* ------------------------------------------------------------- the stage */
 
@@ -390,8 +406,8 @@ body.empty .float-nav>.prefs{margin-left:auto}
 }
 .prose{max-width:var(--measure);min-width:0}
 .prose h2{border-bottom:var(--rule) solid var(--line);padding-bottom:.15em}
-.page h2,.page h3{border:0;padding-bottom:0}
-.page h2{margin-top:1.9em}
+.prose.page h2,.prose.page h3{border:0;padding-bottom:0}
+.prose.page h2{margin-top:2.1em}
 .prose blockquote{
   margin-left:0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--accent);
   color:var(--muted)
@@ -544,7 +560,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.5em}
 
 .state dt{font-weight:700;color:var(--accent);margin-top:1em;font-variant-numeric:tabular-nums}
 .state dd{margin:.2em 0 0;max-width:var(--measure)}
-.page{max-width:var(--measure);margin-inline:auto}
+.prose.page{max-width:var(--measure);margin-inline:auto}
 
 /* ------------------------------------------------------------------ motion */
 

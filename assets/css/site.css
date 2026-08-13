@@ -560,6 +560,11 @@ caption{text-align:left;color:var(--muted);padding-bottom:.5em}
 
 .state dt{font-weight:700;color:var(--accent);margin-top:1em;font-variant-numeric:tabular-nums}
 .state dd{margin:.2em 0 0;max-width:var(--measure)}
+.page-article{max-width:var(--measure);margin-inline:auto}
+/* A written page centres its column, so the way out has to centre with it. On
+   an article the column is left-aligned beside its rail and this does nothing. */
+body.page .backline{max-width:var(--measure);margin-inline:auto}
+.page-article .article-head{margin-bottom:2.4em}
 .prose.page{max-width:var(--measure);margin-inline:auto}
 
 /* ------------------------------------------------------------------ motion */

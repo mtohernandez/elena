@@ -1,0 +1,1 @@
+var e=[`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];function t(e){return/^\d{4}-\d{2}-\d{2}$/.test(e)}function n(n){if(!t(n))return n;let[r,i,a]=n.split(`-`),o=e[Number(i)-1];return o?`${Number(a)} ${o} ${r}`:n}function r(e){return e.slice(0,4)}export{r as n,n as t};

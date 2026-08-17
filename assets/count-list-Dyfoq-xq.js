@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CUclnT8z.js";var t={list:`_list_1du8d_1`},n=e();function r({items:e,empty:r}){return e.length===0?(0,n.jsx)(`p`,{className:`empty`,children:r}):(0,n.jsx)(`ul`,{className:t.list,children:e.map(e=>(0,n.jsxs)(`li`,{children:[e.label,(0,n.jsx)(`span`,{className:`count`,children:e.count})]},e.key))})}export{r as t};

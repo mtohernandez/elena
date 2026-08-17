@@ -1,73 +1,21 @@
-<!doctype html>
-<html lang="en" data-root="../">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Where the work is · Elena</title>
-<meta name="description" content="The current state of the research.">
-<link rel="canonical" href="https://mtohernandez.github.io/elena/state/">
-<link rel="alternate" type="application/atom+xml" href="../feed.xml" title="Feed">
-<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<!-- Applied before the stylesheet loads, or the page flashes the wrong theme
-     first. localStorage throws in some privacy modes, hence the try. -->
-<script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script>
-<link rel="stylesheet" href="../assets/css/site.css">
-</head>
-<body class="index">
-<a class="skip" href="#main">Skip to content</a>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="A research notebook on a system that learns while it runs."/><link rel="icon" href="/elena/favicon.svg" type="image/svg+xml"/><link rel="alternate" type="application/atom+xml" href="/elena/feed.xml" title="Feed"/><title>Where the work is · Elena</title><meta name="description" content="The current state of the research."/><link rel="modulepreload" href="/elena/assets/manifest-b933ed46.js"/><link rel="modulepreload" href="/elena/assets/entry.client-CueRIHNZ.js"/><link rel="modulepreload" href="/elena/assets/jsx-runtime-CUclnT8z.js"/><link rel="modulepreload" href="/elena/assets/errorBoundaries-DqVnp-mZ.js"/><link rel="modulepreload" href="/elena/assets/root-CoxHLvP1.js"/><link rel="modulepreload" href="/elena/assets/lib-C-0xtgKx.js"/><link rel="modulepreload" href="/elena/assets/site-B-EfIILt.js"/><link rel="modulepreload" href="/elena/assets/use-preferences-CuvqOSXy.js"/><link rel="modulepreload" href="/elena/assets/react-Cx5eSR5P.js"/><link rel="modulepreload" href="/elena/assets/app-layout-BcuGmQtx.js"/><link rel="modulepreload" href="/elena/assets/paths-hSKcglAW.js"/><link rel="modulepreload" href="/elena/assets/content-Bzd8_LFM.js"/><link rel="modulepreload" href="/elena/assets/date-CmpCE9dh.js"/><link rel="modulepreload" href="/elena/assets/use-graph-view-ovmJVPIW.js"/><link rel="modulepreload" href="/elena/assets/state-ds_Yrk2f.js"/><script>try{var p=JSON.parse(localStorage.getItem("elena.prefs.v1")||"{}");var d=document.documentElement;if(p.theme&&p.theme!=="system")d.dataset.theme=p.theme;if(p.scale)d.style.setProperty("--font-scale",p.scale);if(p.leading)d.style.setProperty("--leading",p.leading);if(p.measure)d.style.setProperty("--measure",p.measure);if(p.face)d.dataset.face=p.face;}catch(e){}</script><link rel="stylesheet" href="/elena/assets/root-Cf4MTsBj.css"/><link rel="stylesheet" href="/elena/assets/app-layout-B7fnDGzt.css"/><link rel="stylesheet" href="/elena/assets/use-graph-view-DNt7WBbK.css"/><link rel="stylesheet" href="/elena/assets/state-DC0RMxuT.css"/></head><body class="page"><a class="skip _skip_uvd2z_1" href="#main">Skip to content</a><nav class="_nav_1uzf4_1" aria-label="Main"><a class="_brand_1uzf4_19" href="/elena/" data-discover="true">Elena</a><ul class="_lenses_1uzf4_37"><li><a class="_lens_1uzf4_37" href="/elena/?lens=all" data-discover="true">All</a></li><li><a class="_lens_1uzf4_37" href="/elena/?lens=writing" data-discover="true">Writing</a></li><li><a class="_lens_1uzf4_37" href="/elena/?lens=sources" data-discover="true">Sources</a></li><li><a class="_lens_1uzf4_37" href="/elena/?lens=topics" data-discover="true">Topics</a></li><li><a class="_lens_1uzf4_37" href="/elena/?lens=sessions" data-discover="true">Sessions</a></li><li><a class="_lens_1uzf4_37" href="/elena/about/" data-discover="true">About</a></li></ul><details class="_prefs_1o8pi_1"><summary class="_summary_kbez1_46 _control_kbez1_1 _summary_1o8pi_5"><span class="_aa_1o8pi_14" aria-hidden="true">Aa</span><span>Text and theme</span></summary><div class="_panel_1o8pi_22"><fieldset class="_group_1o8pi_37"><legend class="_legend_1o8pi_43">Theme</legend><label class="_option_1o8pi_48"><input type="radio" name="theme" checked="" value="system"/>Match system</label><label class="_option_1o8pi_48"><input type="radio" name="theme" value="light"/>Light</label><label class="_option_1o8pi_48"><input type="radio" name="theme" value="dark"/>Dark</label></fieldset><fieldset class="_group_1o8pi_37"><legend class="_legend_1o8pi_43">Text size</legend><label class="_option_1o8pi_48"><input type="radio" name="scale" checked="" value="1"/>Normal</label><label class="_option_1o8pi_48"><input type="radio" name="scale" value="1.125"/>Larger</label><label class="_option_1o8pi_48"><input type="radio" name="scale" value="1.25"/>Largest</label></fieldset><fieldset class="_group_1o8pi_37"><legend class="_legend_1o8pi_43">Line spacing</legend><label class="_option_1o8pi_48"><input type="radio" name="leading" checked="" value="1.65"/>Normal</label><label class="_option_1o8pi_48"><input type="radio" name="leading" value="1.85"/>Loose</label><label class="_option_1o8pi_48"><input type="radio" name="leading" value="2.05"/>Loosest</label></fieldset><fieldset class="_group_1o8pi_37"><legend class="_legend_1o8pi_43">Line width</legend><label class="_option_1o8pi_48"><input type="radio" name="measure" checked="" value="68ch"/>Normal</label><label class="_option_1o8pi_48"><input type="radio" name="measure" value="58ch"/>Narrow</label><label class="_option_1o8pi_48"><input type="radio" name="measure" value="78ch"/>Wide</label></fieldset><fieldset class="_group_1o8pi_37"><legend class="_legend_1o8pi_43">Typeface</legend><label class="_option_1o8pi_48"><input type="radio" name="face" checked="" value="hyper"/>Hyperlegible</label><label class="_option_1o8pi_48"><input type="radio" name="face" value="system"/>Your system sans</label><label class="_option_1o8pi_48"><input type="radio" name="face" value="serif"/>Your system serif</label></fieldset><button type="button" class="_reset_1o8pi_62">Reset to defaults</button><p class="_note_1o8pi_78">Kept in this browser only. Nothing is sent anywhere.</p></div></details></nav><main id="main"><h1>Where the work is</h1><p class="intro">Generated from the lab’s own tracker, so it cannot go stale. Only the fields chosen for publication appear.</p><dl class="_state_jywyt_1"><div><dt>PHASE</dt><dd>the substrate bottleneck is MEASURED AND CLEARED, and the lab has an acceptance test for the first time. What is missing is no longer a representation or a criterion. It is a mechanism that connects them, and a measured failure rate for the one operation both of them lean on. S0011-S0017 built the surfaces and the contract around the work, not the work: the public site, the canvas, its enforcement, the standing session prompt, and the site&#x27;s migration to a shape a human team can own. THE SCIENCE HAS NOT MOVED SINCE S0009, which is seven sessions. Q13 is still the next measurement, it is cheap, and it is overdue.</dd></div><div><dt>LAW</dt><dd>Nyquist spacing is a design rule, not a preference. FPE support points at Delta=1 sit on the sinc zeros, deterministic bleed is EXACTLY ZERO, and correlated sensory samples behave as if independent. Oversampling at Delta costs a bleed of div(sub(1,Delta),mul(2,Delta)), which SATURATES and never grows with S. Do not discretise finely and hope.</dd></div><div><dt>LAW</dt><dd>cost per episode is QUADRATIC in support-point count (S0008), unchanged by the new dimension law. Sparsity remains the enabling condition.</dd></div><div><dt>CORPUS</dt><dd>47 indexed, 33 APPROVED and citable, 0 errors. math 5|science 14|reference 16|computing 8|english 4. 44 V records, all passing.</dd></div></dl></main><p class="_corner_beosa_1"><span>© <!-- -->2026<!-- --> <!-- -->Mateo Hernandez<!-- --> ·<!-- --> <a href="/elena/licenses/" data-discover="true">licences</a> · <a href="/elena/feed.xml">feed</a></span></p><script>((storageKey, restoreKey) => {
+		if (!window.history.state || !window.history.state.key) {
+			let key = Math.random().toString(32).slice(2);
+			window.history.replaceState({ key }, "");
+		}
+		try {
+			let storedY = JSON.parse(sessionStorage.getItem(storageKey) || "{}")[restoreKey || window.history.state.key];
+			if (typeof storedY === "number") window.scrollTo(0, storedY);
+		} catch (error) {
+			console.error(error);
+			sessionStorage.removeItem(storageKey);
+		}
+	})("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/elena/","future":{"unstable_enableNodeReadableStream":false,"unstable_optimizeDeps":false},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/elena/assets/manifest-b933ed46.js";
+import * as route0 from "/elena/assets/root-CoxHLvP1.js";
+import * as route1 from "/elena/assets/app-layout-BcuGmQtx.js";
+import * as route2 from "/elena/assets/state-ds_Yrk2f.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"app-layout":route1,"routes/state":route2};
 
-<!-- No bar, no panel, no background. The links float over whatever is behind
-     them, because on the front page the thing behind them is the whole site.
-     Every control in this row is the same pill: same height, same border, same
-     radius, same type. They are one family, so they read as one row. -->
-<nav class="float-nav" aria-label="Main"><a class="brand" href="../">Elena</a><ul class="lenses"><li><a class="lens" data-lens="all" href="../#all">All</a></li><li><a class="lens" data-lens="writing" href="../#writing">Writing</a></li><li><a class="lens" data-lens="sources" href="../#sources">Sources</a></li><li><a class="lens" data-lens="topics" href="../#topics">Topics</a></li><li><a class="lens" data-lens="sessions" href="../#sessions">Sessions</a></li><li><a href="../about/">About</a></li></ul>
-<details class="prefs" id="prefs">
-  <summary><span class="prefs-aa" aria-hidden="true">Aa</span><span>Text and theme</span></summary>
-  <div class="prefs-panel">
-    <fieldset><legend>Theme</legend>
-      <label><input type="radio" name="theme" value="system" checked> Match system</label>
-      <label><input type="radio" name="theme" value="light"> Light</label>
-      <label><input type="radio" name="theme" value="dark"> Dark</label>
-    </fieldset>
-    <fieldset><legend>Text size</legend>
-      <label><input type="radio" name="scale" value="1" checked> Normal</label>
-      <label><input type="radio" name="scale" value="1.125"> Larger</label>
-      <label><input type="radio" name="scale" value="1.25"> Largest</label>
-    </fieldset>
-    <fieldset><legend>Line spacing</legend>
-      <label><input type="radio" name="leading" value="1.65" checked> Normal</label>
-      <label><input type="radio" name="leading" value="1.85"> Loose</label>
-      <label><input type="radio" name="leading" value="2.05"> Loosest</label>
-    </fieldset>
-    <fieldset><legend>Line width</legend>
-      <label><input type="radio" name="measure" value="68ch" checked> Normal</label>
-      <label><input type="radio" name="measure" value="58ch"> Narrow</label>
-      <label><input type="radio" name="measure" value="78ch"> Wide</label>
-    </fieldset>
-    <fieldset><legend>Typeface</legend>
-      <label><input type="radio" name="face" value="hyper" checked> Hyperlegible</label>
-      <label><input type="radio" name="face" value="system"> Your system sans</label>
-      <label><input type="radio" name="face" value="serif"> Your system serif</label>
-    </fieldset>
-    <button type="button" class="btn" id="prefs-reset">Reset to defaults</button>
-    <p class="prefs-note">Kept in this browser only. Nothing is sent anywhere.</p>
-  </div>
-</details>
-</nav>
-
-<main id="main">
-<h1>Where the work is</h1>
-<p class="intro">Generated from the lab's own tracker, so it cannot go stale. Only the fields chosen for publication appear.</p>
-<dl class="state">
-<dt>PHASE</dt><dd>the substrate bottleneck is MEASURED AND CLEARED, and the lab has an acceptance test for the first time. What is missing is no longer a representation or a criterion. It is a mechanism that connects them, and a measured failure rate for the one operation both of them lean on.</dd>
-<dt>LAW</dt><dd>Nyquist spacing is a design rule, not a preference. FPE support points at Delta=1 sit on the sinc zeros, deterministic bleed is EXACTLY ZERO, and correlated sensory samples behave as if independent. Oversampling at Delta costs a bleed of div(sub(1,Delta),mul(2,Delta)), which SATURATES and never grows with S. Do not discretise finely and hope.</dd>
-<dt>LAW</dt><dd>cost per episode is QUADRATIC in support-point count (S0008), unchanged by the new dimension law. Sparsity remains the enabling condition.</dd>
-<dt>CORPUS</dt><dd>47 indexed, 33 APPROVED and citable, 0 errors. math 5|science 14|reference 16|computing 8|english 4. 44 V records, all passing.</dd>
-</dl>
-
-</main>
-
-<p class="corner"><span>© 2026 Mateo Hernandez · <a href="../licenses/">licences</a> · <a href="../feed.xml">feed</a></span></p>
-<script src="../assets/js/prefs.js" defer></script>
-</body>
-</html>
+import("/elena/assets/entry.client-CueRIHNZ.js");</script><!--$?--><template id="B:0"></template><!--/$--><script id="_R_">requestAnimationFrame(function(){$RT=performance.now()});</script><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>

@@ -1,0 +1,1 @@
+var e=`/elena/`,t={title:`Elena`,tagline:`Elena learns for as long as she is awake. These are the notes.`,author:`Mateo Hernandez`,url:`https://mtohernandez.github.io/elena/`,description:`A research notebook on a system that learns while it runs.`},n=[`open`,`supported`,`refuted`,`inconclusive`];export{e as n,t as r,n as t};

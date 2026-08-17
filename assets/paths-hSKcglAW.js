@@ -1,0 +1,1 @@
+var e={home:`/`,writing:`/writing/`,article:e=>`/writing/${e}/`,topics:`/topics/`,topic:e=>`/topics/${e}/`,statuses:`/status/`,status:e=>`/status/${e}/`,sessions:`/sessions/`,session:e=>`/sessions/${e}/`,sources:`/sources/`,source:e=>`/sources/${e}/`,state:`/state/`,licenses:`/licenses/`,about:`/about/`};export{e as t};

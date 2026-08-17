@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CUclnT8z.js";import{t}from"./lib-C-0xtgKx.js";import{t as n}from"./paths-hSKcglAW.js";var r={topic:`_topic_1ptk0_1`},i=e();function a({topic:e}){return(0,i.jsx)(t,{className:r.topic,to:n.topic(e),children:e})}export{a as t};
